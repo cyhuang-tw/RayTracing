@@ -3,8 +3,7 @@
 A simple, fast and friendly program to experience the power of ray tracing.
 
 
-# Introduction
-
+## Introduction
 There are 5 basic class in the program:
   - rtMgr: ray tracing manager, which manages objects and lights and provides functions relating to ray tracing.
   - mVector: Vectors and points in the space.
@@ -13,7 +12,7 @@ There are 5 basic class in the program:
   - pixel: Used to store RGB information with normalized value.(i.e. values are in the range of 0 ~ 1)
 
 
-# Usage
+## Usage
 
 Objects and lights should be created through pointer and be passed to rtMgr via addObj(mObj*) or addLight(mLight*).
 ```sh
@@ -29,13 +28,13 @@ To develop your own object models, you can construct object classes inheriting t
   - mVector nVec(mVector&): Determine the normal vector at the given point. Assume the point is on the object surface.
 
 
-### Known Constraints
+## Known Constraints
 
   - The width and height must be odd numbers.
   - The window is vertical to x-y plane.
   - The x-coordinate of the window should be greater than that of the eyes. Otherwise, the y-coordinate may be opposite.
 
 
-### Bug Reporting
+## Bug Reporting
 
 If finding any bugs, please contact me via email: bennyhuang1997@gmail.com or Facebook, thanks.
